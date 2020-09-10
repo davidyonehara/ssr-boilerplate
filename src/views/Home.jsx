@@ -6,10 +6,10 @@ class Home extends Component {
 
     render() {
         let SEO = {
-            title      : 'David James Yonehara - Software Engineer',
-            description: 'My name is David Yonehara. I am a software engineer experienced with single page page web apps, WordPress websites, business analytics, GTM, and more.',
-            keywords   : 'David James Yonehara, Software Engineer, Software Developer, React Developer, React, Redux, PHP, Wordpress, Southern California, Los Angeles',
-            image      : '/images/david-yonehara.jpg'
+            title      : 'SSR Boilerplate',
+            description: '',
+            keywords   : '',
+            image      : ''
         }
 
         return (

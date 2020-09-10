@@ -48,11 +48,15 @@ const serverRenderer = ( req, res, next ) => {
             content = content.replace('<title>React App</title>', `${ helmet.title.toString() }`)
             content = content.replace('<meta name="replace-helmet"/>', `${ helmet.meta.toString() }`)
 
+            // Find and replace env variables. %ENV_VAR% gets pulled from dot env's ENV_VAR.
+            content.match(/%.*?%/g).forEach( envPlaceholder => {
+                let envVar = envPlaceholder.replace(/%/g, '')
+                content = content.replace(envPlaceholder, process.env[envVar])
+            })
+
             const cookies = new Cookies(req.headers.cookie)
 
-            return res.send(
-                content
-            )
+            return res.send(content)
         }
     )
 }
