@@ -1,0 +1,73 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "extends": [
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    /* "shared-node-browser": true, */
+    "commonjs": true
+  },
+  "globals": {
+    "process": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "ecmaVersion": 6,
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "16.4"
+    }
+  },
+  "rules": {
+    "indent": [ "error", 4, { "SwitchCase": 0, "VariableDeclarator": 1 } ],
+    "semi":[ 2, "never" ],
+    "no-unused-vars":["error", { "args": "none" }],
+    "no-extra-semi":"error",
+    "no-undef": "error",
+    "jsx-quotes": "error",
+    "no-process-env": "off",
+    "yoda": "off",
+    "lines-around-comment": "off",
+    "no-mixed-spaces-and-tabs": "warn",
+    "camelcase": "warn",
+    "vars-on-top": "off",
+    "space-unary-ops": ["warn", {
+      "words": true,
+      "nonwords": false
+    }],
+    "no-multi-spaces": [
+      "error",
+      {
+        "exceptions": {
+          "Property": true,
+          "VariableDeclarator": true,
+          "AssignmentExpression": true
+        }
+      }
+    ],
+    "key-spacing": [ "error", { "align": "colon" } ],
+    "operator-linebreak": [
+      "error",
+      "before"
+    ],
+    "brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "react/no-find-dom-node": "warn",
+    "react/no-unescaped-entities": "off",
+    "react/no-deprecated": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/jsx-indent": [ "error", 4 ],
+    "react/jsx-indent-props": [ "error", 4 ],
+    "react/no-children-prop": "off"
+  }
+}
