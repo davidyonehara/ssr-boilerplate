@@ -1,6 +1,6 @@
-## Charts
+## SSR Boilerplate
 
-Simple UI to create and track daily routines.
+Modified CRA with SSR, wiring to connect to DynamoDB, and basic organizational structures and routing.
 
 ### `npm start`
 
